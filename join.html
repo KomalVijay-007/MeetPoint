@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Meetup</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="hud-bg">
+
+        <div class="reactor-core"></div>
+
+        <div class="pulse-ring pulse1"></div>
+        <div class="pulse-ring pulse2"></div>
+        <div class="pulse-ring pulse3"></div>
+
+    
+
+
+    </div>
+
+    <div class="main-content">
+
+        <div class="glass-card">
+
+            <h1>Join Meetup</h1>
+
+            <form id="joinForm">
+
+                <input
+                    type="text"
+                    id="userName"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="meetupCode"
+                    placeholder="Meetup Code"
+                    required
+                >
+
+                <button
+                    type="submit"
+                    class="btn"
+                >
+                    Join Meetup
+                </button>
+
+            </form>
+
+            <div id="joinResult"></div>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="../js/join.js"></script>
+
+</body>
+</html>

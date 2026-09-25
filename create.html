@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Create Meetup
+    </title>
+
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+    <link
+    rel="stylesheet"
+    href="../css/style.css">
+
+</head>
+
+<body>
+
+    <div class="hud-bg">
+
+        <div class="reactor-core"></div>
+
+        <div class="pulse-ring pulse1"></div>
+        <div class="pulse-ring pulse2"></div>
+        <div class="pulse-ring pulse3"></div>
+
+    </div>
+
+    <div class="main-content">
+
+        <div class="glass-card">
+
+            <h1>Create Meetup</h1>
+
+            <form id="meetupForm">
+
+                <input
+                type="text"
+                id="creatorName"
+                placeholder="Your Name"
+                required>
+
+                <input
+                    type="text"
+                    id="meetupName"
+                    placeholder="Meetup Name"
+                    required>
+
+                <input
+                    type="date"
+                    id="meetupDate"
+                    required>
+
+                <input
+                    type="time"
+                    id="meetupTime"
+                    required>
+
+                <input
+                    type="text"
+                    id="meetingPoint"
+                    placeholder="Meeting Point"
+                    required>
+
+                <div
+                    id="selectedLocation"
+                    style="
+                    color:white;
+                    margin:10px 0;
+                    ">
+                    No Location Selected
+                </div>
+
+                <div
+                    id="createMap"
+                    style="
+                    height:300px;
+                    width:100%;
+                    border-radius:12px;
+                    margin-bottom:20px;
+                    ">
+                </div>
+
+                <label class="radiusLabel">
+                    Arrival Radius
+                </label>
+
+                <select id="radius">
+
+                    <option value="50">
+                        50 Meters
+                    </option>
+
+                    <option value="100">
+                        100 Meters
+                    </option>
+
+                    <option value="200">
+                        200 Meters
+                    </option>
+
+                    <option value="500">
+                        500 Meters
+                    </option>
+
+                </select>
+
+                <button
+                    type="submit"
+                    class="btn">
+
+                    Create Meetup
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script
+    src="https://unpkg.com/leaflet/dist/leaflet.js">
+    </script>
+
+    <script
+    type="module"
+    src="../js/create.js">
+    </script>
+
+</body>
+</html>
